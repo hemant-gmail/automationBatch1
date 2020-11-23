@@ -1,0 +1,21 @@
+package seleniumBasicFeatures;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class iframeElement {
+	FunctionalLibrary lib = new FunctionalLibrary();
+	@Test
+	public void test6() {
+		System.out.println("Launching browser");
+		WebDriver wb = lib.launchBrowser("FireFox");
+
+		wb.get("https://paytmmall.com/");
+		
+		wb.manage().window().maximize();
+		
+		wb.findElement(By.xpath("")).click();
+
+	}
+}

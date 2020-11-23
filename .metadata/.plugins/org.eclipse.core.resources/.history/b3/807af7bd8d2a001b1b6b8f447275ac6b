@@ -1,0 +1,14 @@
+package functionalLibrary;
+
+import org.openqa.selenium.WebDriver;
+
+public class ApplicationLibrary {
+	
+	public WebDriver launchBrowser(String BrowserName){
+		WebDriver wdr=null;
+		
+		
+		return wdr;
+	}
+
+}

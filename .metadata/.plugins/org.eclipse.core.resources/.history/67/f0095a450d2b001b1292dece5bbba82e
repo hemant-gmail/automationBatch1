@@ -1,0 +1,23 @@
+package testScripts.Home;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import driver.Driver;
+
+public class TC_HomePage_Validation extends Driver{
+	
+	WebDriver wdr;
+	
+	@BeforeClass
+	public void setUp(){
+		
+	}
+	
+	@AfterClass
+	public void tearDown(){
+		
+	}
+
+}

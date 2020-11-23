@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="ForFireFox">
+  <parameter name="SelectBrowser" value="firefox"></parameter>
+    <classes>
+<!--       <class name="seleniumBasicFeaturesPractice1.Element_5_buttons"/> -->
+<!--       <class name="seleniumBasicFeaturesPractice1.Element_6_MouseHower_DragDrop"/> -->
+<!--       	<class name="seleniumBasicFeaturesPractice1.Element_7_WebTable"/> -->
+<!--       	<class name="seleniumBasicFeaturesPractice1.Element_8_Alert"/> -->
+      	<class name="seleniumBasicFeaturesPractice1.WindowHandlingPractice1"/>
+    </classes>
+  </test> <!-- Test -->
+
+<!--   <test thread-count="5" name="ForChrome">
+  <parameter name="SelectBrowser" value="chrome"></parameter>
+    <classes>
+      <class name="seleniumBasicFeaturesPractice1.Element_5_buttons"/>
+      <class name="seleniumBasicFeaturesPractice1.Element_6_MouseHower_DragDrop"/>
+ 	  <class name="seleniumBasicFeaturesPractice1.Element_7_WebTable"/>
+      	<class name="seleniumBasicFeaturesPractice1.Element_8_Alert"/>
+      	<class name="seleniumBasicFeaturesPractice1.WindowHandlingPractice1"/>
+    </classes>
+  </test> Test
+
+  <test thread-count="5" name="ForEdge">
+  <parameter name="SelectBrowser" value="edge"></parameter>
+    <classes>
+      <class name="seleniumBasicFeaturesPractice1.Element_5_buttons"/>
+      <class name="seleniumBasicFeaturesPractice1.Element_6_MouseHower_DragDrop"/>
+      <class name="seleniumBasicFeaturesPractice1.Element_7_WebTable"/>
+      	<class name="seleniumBasicFeaturesPractice1.Element_8_Alert"/>
+      	<class name="seleniumBasicFeaturesPractice1.WindowHandlingPractice1"/>
+    </classes>
+  </test> Test
+ -->
+ 
+</suite> <!-- Suite -->

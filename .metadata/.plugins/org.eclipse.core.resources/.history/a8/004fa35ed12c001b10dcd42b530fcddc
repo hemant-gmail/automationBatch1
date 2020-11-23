@@ -1,0 +1,12 @@
+package com.sampleApplication.test;
+
+import org.testng.annotations.Test;
+
+public class FirstMavenClass {
+
+	@Test
+	public void test1() {
+		System.out.println("Hemant Is Best");
+	}
+
+}

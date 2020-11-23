@@ -1,0 +1,25 @@
+package driver;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+import configuration.Configuration;
+import functionalLibrary.ApplicationLibrary;
+import functionalLibrary.ExcelFunctionLibrary;
+
+public class Driver {
+
+	public ApplicationLibrary lib;
+	public ExcelFunctionLibrary xlLib;
+	
+	@BeforeSuite
+	public void oneTimeSetup(){
+		lib = new ApplicationLibrary();
+		xlLib= new ExcelFunctionLibrary(Configuration.testDataPath);
+	}
+	
+	@AfterSuite
+	public void oneTimeTearDown(){
+		
+	}
+}

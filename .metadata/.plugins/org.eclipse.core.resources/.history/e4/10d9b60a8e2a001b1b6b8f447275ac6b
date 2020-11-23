@@ -1,0 +1,21 @@
+package functionalLibrary;
+
+import org.openqa.selenium.WebDriver;
+
+public class ApplicationLibrary {
+	
+	public WebDriver launchBrowser(String BrowserName){
+		WebDriver wdr=null;
+		
+		if(BrowserName.equalsIgnoreCase("Chrome")){
+			System.getProperty("","");
+		}else if (BrowserName.equalsIgnoreCase("Firefox")){
+			
+		}else if (BrowserName.equalsIgnoreCase("edge")){
+			
+		}
+		
+		return wdr;
+	}
+
+}

@@ -1,0 +1,44 @@
+package testScripts.Home;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import driver.Driver;
+
+public class TC_HomePage_Validation extends Driver{
+	
+	WebDriver wdr;
+	
+	@BeforeClass
+	public void setUp(){
+		wdr = lib.launchBrowser("firefox");
+	}
+	
+	@Test
+	public void testAutomobileLink(){
+		
+	}
+	
+	@Test
+	public void testMotorCycleLink(){
+		
+	}
+	
+	@Test
+	public void testTruckLink(){
+		
+	}
+	
+	@Test
+	public void testCamperLink(){
+		
+	}
+
+	@AfterClass
+	public void tearDown(){
+		wdr.close();
+	}
+
+}

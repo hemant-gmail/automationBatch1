@@ -1,0 +1,43 @@
+package seleniumBasicFeaturesPractice1;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class Element_8_Alert {
+	
+	@Test(parameters="SelectBrowser")
+	public void alertPractice(String browser) throws InterruptedException {
+		FunctionalLibrary lib = new FunctionalLibrary();
+
+		WebDriver wdr = lib.launchBrowser(browser);
+		
+		wdr.get("https://demoqa.com/alerts");
+		
+		wdr.manage().window().maximize();
+		
+//-------------------------------------------------------------------------------------
+		wdr.findElement(By.xpath("//button[@id='alertButton']")).click();
+		Thread.sleep(2000);
+		
+		Alert alr= wdr.switchTo().alert();
+		alr.accept();
+//--------------------------------------------------------------------------------------
+		wdr.findElement(By.xpath("//button[@id='confirmButton']")).click();
+		Thread.sleep(2000);
+		
+		alr= wdr.switchTo().alert();
+		alr.accept();
+
+		wdr.findElement(By.xpath("//button[@id='confirmButton']")).click();
+		Thread.sleep(2000);
+		
+		alr= wdr.switchTo().alert();
+		alr.dismiss();
+		
+		Thread.sleep(5000);
+		wdr.close();
+	}
+
+}

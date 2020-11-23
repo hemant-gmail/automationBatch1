@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regresion Suite]">
+  <test thread-count="5" name="Payment Module(failed)">
+    <classes>
+      <class name="payment.Testing">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforePaymentModule"/>
+          <include name="afterMethod"/>
+          <include name="Test2"/>
+          <include name="AfterPaymentModule"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- payment.Testing -->
+      <class name="payment.Testing2">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="Test2"/>
+        </methods>
+      </class> <!-- payment.Testing2 -->
+    </classes>
+  </test> <!-- Payment Module(failed) -->
+  <test thread-count="5" name="Fund Transfer Module(failed)">
+    <classes>
+      <class name="fundTransfer.Testing">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="Test2"/>
+          <include name="beforePaymentModule"/>
+          <include name="AfterPaymentModule"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- fundTransfer.Testing -->
+      <class name="fundTransfer.Testing2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="Test2"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- fundTransfer.Testing2 -->
+    </classes>
+  </test> <!-- Fund Transfer Module(failed) -->
+  <test thread-count="5" name="Report Module(failed)">
+    <classes>
+      <class name="reports.Testing2">
+        <methods>
+          <include name="Test2"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- reports.Testing2 -->
+      <class name="reports.Testing">
+        <methods>
+          <include name="AfterPaymentModule"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="Test2"/>
+          <include name="beforePaymentModule"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- reports.Testing -->
+    </classes>
+  </test> <!-- Report Module(failed) -->
+  <test thread-count="5" name="Eod Validation module(failed)">
+    <classes>
+      <class name="eodValidations.Testing3">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="Test2"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- eodValidations.Testing3 -->
+      <class name="eodValidations.Testing2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="Test2"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- eodValidations.Testing2 -->
+      <class name="eodValidations.Testing">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="Test2"/>
+          <include name="beforePaymentModule"/>
+          <include name="AfterPaymentModule"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- eodValidations.Testing -->
+      <class name="eodValidations.Testing4">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Test2"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- eodValidations.Testing4 -->
+    </classes>
+  </test> <!-- Eod Validation module(failed) -->
+</suite> <!-- Failed suite [Regresion Suite] -->

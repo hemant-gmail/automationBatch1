@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="ForFireFox(failed)">
+    <parameter name="SelectBrowser" value="firefox"/>
+    <classes>
+      <class name="seleniumBasicFeaturesPractice1.Element_10_UploadFile">
+        <methods>
+          <include name="uplaodFile" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- seleniumBasicFeaturesPractice1.Element_10_UploadFile -->
+    </classes>
+  </test> <!-- ForFireFox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

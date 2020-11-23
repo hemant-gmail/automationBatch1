@@ -1,0 +1,9 @@
+package configuration;
+
+public class Configuration {
+	//common things which use in throughout the project.
+	public static final String url="http://sampleapp.tricentis.com/101/index.php";
+	public static final String chromeDriverPath = System.getProperty("user.dir") +  "\\BrowserDrivers\\chromedriver.exe";
+	public static final String fireFoxDriverPath = System.getProperty("user.dir") +  "\\BrowserDrivers\\geckodriver.exe";
+	public static final String edgeDriverPath = System.getProperty("user.dir") +  "\\BrowserDrivers\\msedgedriver.exe";
+}

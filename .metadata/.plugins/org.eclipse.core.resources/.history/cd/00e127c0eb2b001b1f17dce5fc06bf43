@@ -1,0 +1,48 @@
+package seleniumBasicFeatures;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class CalanderEliment {
+FunctionalLibrary lib = new FunctionalLibrary();
+	
+	
+	@Test
+	public void test6(){
+		System.out.println("Launching browser");
+		WebDriver wb = lib.launchBrowser("FireFox");
+
+		wb.get("http://sampleapp.tricentis.com/101/app.php");
+
+		wb.manage().window().maximize();
+		wb.findElement(By.id("opendateofmanufacturecalender")).click();
+		
+		//2017 March 10
+		String expectedYear = "2019";
+		String expectedMonth = "March";
+		String expectedDay = "10";
+		
+		//year
+		WebElement year = wb.findElement(By.xpath("//span[@class='ui-datepicker-year']"));
+		String actualYear = year.getText();
+		while (!actualYear.equals(expectedYear)){
+			//Back button
+			wb.findElement(By.xpath("//a[@title='Prev']")).click();	
+			actualYear = wb.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
+		}
+		
+		//Month
+		WebElement month = wb.findElement(By.xpath("//span[@class='ui-datepicker-month']"));
+		String actualMonth = month.getText();
+		while (!actualMonth.equals(expectedMonth)){
+			//Back button
+			wb.findElement(By.xpath("//a[@title='Prev']")).click();			
+			actualMonth = wb.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
+		}
+		
+		wb.findElement(By.xpath("//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[text()='"+expectedDay+"']")).click();
+	}
+
+}

@@ -1,0 +1,10 @@
+package seleniumBasicFeaturesPractice1;
+
+public class WindowHandlingPractice1 {
+	
+	public void windowHandlePractice1(){
+		FunctionalLibrary lib = new FunctionalLibrary();
+		
+	}
+
+}

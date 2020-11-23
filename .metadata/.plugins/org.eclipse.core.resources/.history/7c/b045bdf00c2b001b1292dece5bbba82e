@@ -1,0 +1,13 @@
+package testScripts.Home;
+
+public class TC_HomePage_Validation {
+	
+	public void setup(){
+		
+	}
+	
+	public void tearDown(){
+		
+	}
+
+}

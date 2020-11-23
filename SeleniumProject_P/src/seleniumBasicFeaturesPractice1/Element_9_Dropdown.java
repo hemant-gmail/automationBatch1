@@ -1,0 +1,33 @@
+package seleniumBasicFeaturesPractice1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class Element_9_Dropdown {
+	@Test(parameters = "SelectBrowser")
+	public void alertPractice(String browser) throws InterruptedException {
+		FunctionalLibrary lib = new FunctionalLibrary();
+
+		WebDriver wdr = lib.launchBrowser(browser);
+
+		wdr.get("http://sampleapp.tricentis.com/101/app.php");
+
+		wdr.manage().window().maximize();
+		
+		WebElement wele = wdr.findElement(By.id("make"));
+		
+		Select sel = new Select(wele);
+		
+		sel.selectByIndex(2);
+		Thread.sleep(2000);
+		
+		sel.selectByValue("Mazda");
+		Thread.sleep(2000);
+		
+		sel.selectByVisibleText("Honda");
+	}
+
+}

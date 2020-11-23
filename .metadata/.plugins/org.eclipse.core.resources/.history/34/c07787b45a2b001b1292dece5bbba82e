@@ -1,0 +1,10 @@
+package seleniumBasicFeaturesPractice1;
+
+public class Element_10_UploadFile {
+	
+	@Test
+	public void uplaodFile(){
+		
+	}
+
+}

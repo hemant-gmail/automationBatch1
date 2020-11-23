@@ -1,0 +1,20 @@
+package pages.Automobile;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class EnterVehicleData {
+	
+	WebDriver  wdr;
+	
+	public EnterVehicleData(WebDriver wdr){
+		this.wdr= wdr;
+	}
+	
+	//WebElements
+	
+	By make= By.id("make");
+	
+	//Actions
+
+}

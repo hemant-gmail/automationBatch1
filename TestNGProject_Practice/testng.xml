@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regration Suite">
+
+  <test thread-count="5" name="Payment Module">
+    <classes>
+      <class name="payment_Practice.Testing_practice"> 
+      	<methods>
+      		<exclude name="test1">
+      		</exclude>
+      		<include name="test1">
+      		</include>
+      	</methods>
+      </class>
+      <class name="payment_Practice.Testing2_practice"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Report Module">
+  	<classes>
+  		<class name="reports_Practice.Testing_practice"></class>
+  		<class name="reports_Practice.Testing_practice"></class>		
+  	</classes>
+  </test>
+  
+  <test name="Fund Transfer Module">
+  	<classes>
+  		<class name="fundTransfer_Practice.Testing_practice"></class>
+  		<class name="fundTransfer_Practice.Testing_practice"></class>		
+  	</classes>
+  </test>
+  
+  <test name="eodValidation Module">
+  	<classes>
+  		<class name="eodValidation_Practice.Testing_practice"></class>
+  		<class name="eodValidation_Practice.Testing_practice"></class>		
+  	</classes>
+  </test> 
+</suite> <!-- Suite -->

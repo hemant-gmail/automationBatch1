@@ -1,0 +1,76 @@
+package testScripts.Home;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import configuration.Configuration;
+import driver.Driver;
+import pages.Home.HomePage;
+
+public class TC_HomePage_Validation extends Driver{
+	
+	WebDriver wdr;
+	HomePage homepage ;
+	pages.Automobile.EnterVehicleData automobileEnterVehicleData;
+	pages.Truck.EnterVehicleData truckEnterVehicleData;
+	pages.MotorCycle.EnterVehicleData motorcycleEnterVehicleData;
+	pages.Camper.EnterVehicleData camperEnterVehicleData;
+	
+	@BeforeClass
+	public void setUp(){
+		wdr = lib.launchBrowser("firefox");
+		homepage = new HomePage(wdr);
+		automobileEnterVehicleData =  new pages.Automobile.EnterVehicleData(wdr);
+		truckEnterVehicleData = new pages.Truck.EnterVehicleData(wdr);
+		motorcycleEnterVehicleData = new pages.MotorCycle.EnterVehicleData(wdr);
+		camperEnterVehicleData = new pages.Camper.EnterVehicleData(wdr);
+		
+	}
+	
+	@BeforeMethod
+	public void navigate(){
+		wdr.get(Configuration.url);
+	}
+	
+	@Test
+	public void testAutomobileLink() throws InterruptedException{
+		//Step 1: Verify automobile link is present on Home page
+		Assert.assertTrue(homepage.isAutomobilePresent(),"Automobile link is not present on Home page");
+		
+		//Step 2: Verify that automobile link is working
+		homepage.clickAutomobile();
+		
+		Thread.sleep(3000);
+		
+		
+		//Step 3: Verify that Enter Vehical Data is displayed.
+		Assert.assertTrue(automobileEnterVehicleData.ismakePresent(), "Enter Vehical Data is not present");
+	}
+	
+	@Test
+	public void testMotorCycleLink(){
+		
+	}
+	
+	@Test
+	public void testTruckLink(){
+		
+	}
+	
+	@Test
+	public void testCamperLink(){
+		
+	}
+
+	@AfterClass
+	public void tearDown(){
+		wdr.close();
+	}
+
+}

@@ -1,0 +1,19 @@
+package testing;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class CaptureScreenShot {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver",
+				"D:\\AutomationBatch1\\automationBatch1\\Drivers\\geckodriver.exe");
+		FirefoxDriver fdr = new FirefoxDriver();
+
+		fdr.get("http://sampleapp.tricentis.com/101/app.php");
+
+		fdr.manage().window().maximize();
+
+	}
+	
+	
+}

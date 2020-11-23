@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regresion Suite">
+	<test thread-count="5" name="Payment Module">
+		<classes>
+			<class name="payment.Testing" />
+			<class name="payment.Testing2" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Fund Transfer Module">
+		<classes>
+			<class name="fundTransfer.Testing">
+			</class>
+			<class name="fundTransfer.Testing2">
+			</class>
+		</classes>
+	</test>
+	<test name="Report Module">
+		<classes>
+			<class name="reports.Testing"></class>
+			<class name="reports.Testing2"></class>
+		</classes>
+	</test>
+
+	<test name="Eod Validation module">
+		<classes>
+			<class name="eodValidations.Testing"></class>
+			<class name="eodValidations.Testing2"></class>
+			<class name="eodValidations.Testing3" />
+			<class name="eodValidations.Testing4" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

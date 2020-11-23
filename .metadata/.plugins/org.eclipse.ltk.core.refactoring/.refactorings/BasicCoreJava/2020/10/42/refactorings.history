@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;oops.polymorphism_Practice&apos; to &apos;oops.polymorphismPractice&apos;&#x0D;&#x0A;- Original project: &apos;BasicCoreJava&apos;&#x0D;&#x0A;- Original element: &apos;BasicCoreJava/src/oops.polymorphism_Practice&apos;&#x0D;&#x0A;- Renamed element: &apos;BasicCoreJava/src/oops.polymorphismPractice&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;oops.polymorphism_Practice&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;oops.polymorphism_Practice" name="oops.polymorphismPractice" qualified="false" references="true" stamp="1602792436897" textual="false" version="1.0"/>
+</session>

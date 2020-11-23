@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ExcelFunctionLibrary2.java&apos; to &apos;AutomationFrameworkH/src/functionalLibrary&apos;&#x0D;&#x0A;- Original project: &apos;TestNGProject2&apos;&#x0D;&#x0A;- Destination element: &apos;AutomationFrameworkH/src/functionalLibrary&apos;&#x0D;&#x0A;- Original element: &apos;readExcel.ExcelFunctionLibrary2.java&apos;" description="Copy compilation unit" destination="=AutomationFrameworkH/src&lt;functionalLibrary" element1="/src&lt;readExcel{ExcelFunctionLibrary2.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1605807064365" units="1" version="1.0"/>
+</session>

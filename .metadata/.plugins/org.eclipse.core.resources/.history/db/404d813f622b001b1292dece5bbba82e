@@ -1,0 +1,12 @@
+package extentReportFeatures;
+
+import com.aventstack.extentreports.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+public class Ttesting {
+	public static void main(String[] args) {
+		String reportPath = "D:\\AutomationBatch1\\automationBatch1\\ExtentReporting\\extentReports\\";
+		ExtentReporter report = new ExtentHtmlReporter(reportPath);
+	}
+
+}

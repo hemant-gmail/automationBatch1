@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regration Suite]">
+  <test thread-count="5" name="Payment Module(failed)">
+    <classes>
+      <class name="payment_Practice.Testing2_practice">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- payment_Practice.Testing2_practice -->
+      <class name="payment_Practice.Testing_practice">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="test2"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- payment_Practice.Testing_practice -->
+    </classes>
+  </test> <!-- Payment Module(failed) -->
+  <test thread-count="5" name="Report Module(failed)">
+    <classes>
+      <class name="reports_Practice.Testing_practice">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="test2"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- reports_Practice.Testing_practice -->
+    </classes>
+  </test> <!-- Report Module(failed) -->
+  <test thread-count="5" name="Fund Transfer Module(failed)">
+    <classes>
+      <class name="fundTransfer_Practice.Testing_practice">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="test2"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- fundTransfer_Practice.Testing_practice -->
+    </classes>
+  </test> <!-- Fund Transfer Module(failed) -->
+  <test thread-count="5" name="eodValidation Module(failed)">
+    <classes>
+      <class name="eodValidation_Practice.Testing_practice">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="test2"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- eodValidation_Practice.Testing_practice -->
+    </classes>
+  </test> <!-- eodValidation Module(failed) -->
+</suite> <!-- Failed suite [Regration Suite] -->

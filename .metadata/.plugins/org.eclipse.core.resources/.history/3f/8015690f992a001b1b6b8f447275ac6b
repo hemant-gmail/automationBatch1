@@ -1,0 +1,64 @@
+package pages.Home;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import functionalLibrary.ApplicationLibrary;
+
+public class HomePage {
+	
+	WebDriver wdr;
+	
+	ApplicationLibrary lib = new ApplicationLibrary();
+	
+	public HomePage(WebDriver wdr){
+		this.wdr=wdr;
+	}
+
+	//WebElement
+	By automobile = By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_automobile']");
+	By truck = By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_truck']");
+	By motorcycle = By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_motorcycle']");
+	By camper = By.xpath("//div[@class='main-navigation']/ul/li/a[@id='nav_camper']");
+	
+	//
+	public void clickAutomobile() {
+		
+/*		if (lib.isElementPresent(wdr, automobile) == true) {
+			wdr.findElement(automobile).click();
+		} else
+			Assert.fail("Automobile element is not present on Home page");
+*/	
+		wdr.findElement(automobile).click();
+	}
+	
+	public void clickTruck() {
+
+		if (lib.isElementPresent(wdr, truck) == true) {
+			wdr.findElement(truck).click();
+		} else
+			Assert.fail("Truck element is not present on Home page");
+
+	}
+
+	public void clickMotorCycle() {
+
+		if (lib.isElementPresent(wdr, motorcycle) == true) {
+			wdr.findElement(motorcycle).click();
+		} else
+			Assert.fail("Motorcycle element is not present on Home page");
+
+	}
+
+	public void clickCamper() {
+
+		if (lib.isElementPresent(wdr, camper) == true) {
+			wdr.findElement(camper).click();
+		} else
+			Assert.fail("Camper element is not present on Home page");
+
+	}
+
+	
+}

@@ -1,0 +1,42 @@
+package seleniumBasicFeaturesPractice1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class Element_5_buttons {
+	
+	FunctionalLibrary lib = new FunctionalLibrary();
+	
+	@Test(parameter="SelectBrowser")
+	public void buttonsFireFox(String browser) throws InterruptedException{
+		
+		//WebDriver wdr = lib.launchBrowser("firefox");
+		//WebDriver wdr = lib.launchBrowser("edge");
+		//WebDriver wdr = lib.launchBrowser("chrome");
+		//OR using testNG
+		WebDriver wdr = lib.launchBrowser(browser);
+		wdr.get("https://demoqa.com/buttons");
+		wdr.manage().window().maximize();
+
+		//Normal Click
+		wdr.findElement(By.xpath("//button[text()= 'Click Me']")).click();
+		
+		//Double Click
+		Actions act = new Actions(wdr);
+		WebElement wele = wdr.findElement(By.xpath("//button[text()= 'Double Click Me']"));
+		act.doubleClick(wele).build().perform();
+		
+		
+		//right Click
+		wele = wdr.findElement(By.xpath("//button[text()= 'Right Click Me']"));
+		act.contextClick(wele).build().perform();
+		
+		Thread.sleep(5000);
+		wdr.close();
+	}
+
+}
